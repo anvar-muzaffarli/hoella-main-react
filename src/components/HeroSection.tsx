@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 
+import { Autoplay } from 'swiper/modules';
+
 
 const HeroSection: React.FC = () => {
     return (
@@ -30,6 +32,14 @@ const HeroSection: React.FC = () => {
             <Swiper className="carousel-section py-100"
 
                 slidesPerView={1}
+
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+
+                modules={[Autoplay]}
+
 
                 breakpoints={{
                    
