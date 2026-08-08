@@ -17,6 +17,8 @@ const CategoriesSection: React.FC = () => {
             <div className="categories flex justify-center gap-15">
 
             {
+                // && Conditional Rendering
+                // map 
                 kateqoriyalar && kateqoriyalar.map((birKateqoriya)=>(
                     <Category kateqoriyaninShekli={birKateqoriya.mehsulun_shekli} kateqoriyaninAdi={birKateqoriya.mehsulun_adi} />
                 ) )
