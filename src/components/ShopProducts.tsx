@@ -15,6 +15,8 @@ interface Category {
 }
 
 
+// string,boolean, undefined, object, [],
+
 interface Product {
   id: number;
   title: string;
@@ -28,6 +30,8 @@ interface Product {
 }
 
 // []
+
+
 
 
 
@@ -46,8 +50,8 @@ useEffect(()=> {
   const mehsullariGetir = async() => {
       try {
         // Generics
-        const mehsullar = await axios.get<Product[]>('https://api.escuelajs.co/api/v1/products')
-       setUrunler(mehsullar.data)
+        const mehsullar = await axios.get<Product[]>('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
+      setUrunler(mehsullar.data)
 
       }
       catch(hata) {
@@ -63,10 +67,9 @@ useEffect(()=> {
 
 
 
-// if (loading) {
-//   return <span className="loader"></span>;
-// }
-
+if (loading) {
+  return <span className='text-center py-20 text-7xl'>Melumatlariniz yuklenir...</span>;
+}
 
 
   return (
@@ -75,13 +78,17 @@ useEffect(()=> {
     <h1 className="text-center text-bold text-[28px] md:text-[48px] league-spartan-bold">Shop Our Latest Drops</h1>
 
     <div className="product-cards grid grid-cols-1 md:grid-cols-3">
-             {/*bura bizim mehsullar gelecek  */}
+            
 
-             <ProductCard />
-             <ProductCard />
-             <ProductCard />
-             <ProductCard />
-             <ProductCard />
+            {
+              urunler && urunler.map(birUrun=> (
+                // props = "melumatlar"
+                <ProductCard key={birUrun.id} basliq={birUrun.title} qiymeti={birUrun.price} shekil= {birUrun.images[0]}   />
+              ))
+            }
+
+            
+         
            
          
 

@@ -1,16 +1,24 @@
  import React from "react";
 
 
+ interface ProductCardProps {
+  key:number;
+  basliq:string;
+  qiymeti:number;
+  shekil:string;
+
+ }
+
 
  
- const ProductCard:React.FC = () => {
+ const ProductCard:React.FC<ProductCardProps> = ({basliq, qiymeti, shekil}) => {
     return (
       <div className="product-card flex flex-col justify-center">
-        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="" className="product-img" />
-        <h5>Məhsul Başlığı</h5>
+        <img src={shekil} alt="" className="product-img rounded-[50%]" />
+        <h5>{basliq}</h5>
         <div className="price-section flex justify-between">
-          <small>$ 99.99</small>
-          <img src="./public/images/shop-latest/plus.svg" alt="" />
+          <small className="text-2xl font-bold py-4.5">{qiymeti} &#8378;</small>
+          <img src="./public/images/shop-latest/plus.svg" alt="" className="w-5" />
         </div>
       </div>
     );

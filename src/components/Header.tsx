@@ -1,4 +1,5 @@
 import React, {useRef} from 'react'
+import { Link } from 'react-router-dom'
 // TODO 1. object destructuring - Obyektlerin parcalanmasi 
 // Eger senin fonksiyonun geriye htmle benzeyen kod qaytarirsa bu funksiya component adlanir.
 // function expression
@@ -46,7 +47,7 @@ const Header: React.FC = () => {
 
 
             <header className="header px-2.5 md:px-10 py-10 flex justify-between items-center">
-                <img src="./public/images/header/logo.svg" alt="" className="logo hidden lg:flex" />
+                <Link to="/"><img src="./public/images/header/logo.svg" alt="" className="logo hidden lg:flex" /> </Link>
 
                 <div className="mobile-section flex items-center gap-3.5 md:gap-6 lg:hidden ">
                     <img src="./public/images/header/bars.svg" alt="" onClick={navbariAc}   className="cursor-pointer" />
@@ -54,9 +55,9 @@ const Header: React.FC = () => {
                 </div>
 
                 <nav className="nav-links hidden lg:flex lg:gap-10 lg:items-center">
-                    <a href="">Design your own </a>
+                    <Link to="/dizayn">Design your own </Link>
                     <a href="">Shop</a>
-                    <a href="">Gifts</a>
+                    <Link to="/hediyyeler">Gifts</Link>
                 </nav>
 
                 <div className="search-bar md:w-[90%] lg:w-[30%] flex justify-center items-center gap-7.5">
