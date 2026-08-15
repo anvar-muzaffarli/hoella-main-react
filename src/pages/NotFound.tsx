@@ -1,4 +1,3 @@
-import React from 'react';
 import { Home, ArrowLeft, AlertTriangle } from 'lucide-react'; // İkonları ehtiyacınıza uyğun dəyişə bilərsiniz
 
 export default function NotFound() {

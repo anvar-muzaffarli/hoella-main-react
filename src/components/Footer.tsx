@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="bg-[#211F1D] text-[#9A9793] font-sans relative pt-20 pb-8 px-6">
       
       {/* Əsas grid bölməsi */}
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 lg:gap-x-12">
+      <div className="max-w-300 mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 lg:gap-x-12">
         
         {/* 1-ci Sütun (Loqo və mətn) */}
         <div className="md:col-span-5 lg:col-span-4">
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               <path d="M82 35 L95 30" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
             </svg>
           </div>
-          <p className="text-[13px] leading-6 max-w-[280px]">
+          <p className="text-[13px] leading-6 max-w-70">
             Connected in Comfort. Matching premium
             <br />
             streetwear for you and your companions.
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Alt hissə (Copyright və linklər) */}
-      <div className="max-w-[1200px] mx-auto mt-16 pt-6 border-t border-[#353331] flex flex-col md:flex-row justify-between items-center text-[12px]">
+      <div className="max-w-300 mx-auto mt-16 pt-6 border-t border-[#353331] flex flex-col md:flex-row justify-between items-center text-[12px]">
         <p className="mb-4 md:mb-0 text-[#6B6967]">
           © 2026 Hoella. All rights reserved.
         </p>
