@@ -47,14 +47,14 @@
     {
         "id":7,
         "mehsulun_adi":"T-shirts",
-        "mehsulun_shekli": "public/images/category/t-shirts.svg"
+        "mehsulun_shekli": "/images/category/t-shirts.svg"
     },
 
     
     {
         "id":8,
         "mehsulun_adi":"Sweatshirt",
-        "mehsulun_shekli": "public/images/category/sweat.svg"
+        "mehsulun_shekli": "/images/category/sweat.svg"
     }
 
 ]
