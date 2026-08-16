@@ -5,6 +5,7 @@ import ShopProducts from '../components/ShopProducts'
 import WearYourConnection from '../components/WearYourConnection'
 
 const Home: React.FC = () => {
+    // sayti yukleyirik
     return (
         <div>
             <HeroSection />
