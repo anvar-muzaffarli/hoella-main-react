@@ -11,21 +11,7 @@ const Footer: React.FC = () => {
         <div className="md:col-span-5 lg:col-span-4">
           <div className="mb-6">
             {/* Şəkildəki narıncı əl loqosu (Təxmini SVG, originalı ilə dəyişə bilərsiniz) */}
-            <svg 
-              width="44" 
-              height="44" 
-              viewBox="0 0 100 100" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-[#F96400]"
-            >
-              <path d="M30 35 C20 50 15 70 35 85 C55 100 80 85 85 60 C90 35 70 15 50 20" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
-              <path d="M25 45 C40 45 45 60 35 70" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
-              <path d="M30 25 L35 5" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
-              <path d="M48 20 L55 2" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
-              <path d="M68 22 L80 10" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
-              <path d="M82 35 L95 30" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
-            </svg>
+           <img src="/images/header/mobile-logo.svg" alt="" />
           </div>
           <p className="text-[13px] leading-6 max-w-70">
             Connected in Comfort. Matching premium
