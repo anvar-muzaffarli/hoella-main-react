@@ -46,8 +46,8 @@ const Header: React.FC = () => {
 
 
 
-            <header className="header px-2.5 md:px-10 py-10 flex justify-between items-center">
-                <Link to="/"><img src="/images/header/logo.svg" alt="" className="logo hidden lg:flex" /> </Link>
+            <header className="header px-4.5 md:px-10 py-10 flex justify-between items-center">
+                <Link to="/" className='hidden lg:flex '><img src="/images/header/logo.svg" alt="" className="logo" /> </Link>
 
                 <div className="mobile-section flex items-center gap-3.5 md:gap-6 lg:hidden ">
                     <img src="/images/header/bars.svg" alt="" onClick={navbariAc}   className="cursor-pointer" />
