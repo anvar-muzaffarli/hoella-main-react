@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 
+import { Autoplay } from 'swiper/modules';
+
 
 const HeroSection: React.FC = () => {
     return (
@@ -31,6 +33,14 @@ const HeroSection: React.FC = () => {
 
                 slidesPerView={1}
 
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+
+                modules={[Autoplay]}
+
+
                 breakpoints={{
                    
                     768: {
@@ -43,19 +53,19 @@ const HeroSection: React.FC = () => {
 
                 <SwiperSlide>
                     <div className="bg-[#00B3FF]   relative w-82 h-68">
-                        <img src="./public/images/hero/it.png" alt="" className="absolute w-76 h-94.5 left-1/2 -translate-x-1/2 -top-21.75" />
+                        <img src="/images/hero/it.png" alt="" className="absolute w-76 h-94.5 left-1/2 -translate-x-1/2 -top-21.75" />
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="bg-[#00B3FF]   relative w-82 h-68">
-                        <img src="./public/images/hero/man.png" alt="" className="absolute left-1/2 -translate-x-1/2 w-76 h-94.5 -top-26.25" />
+                        <img src="/images/hero/man.png" alt="" className="absolute left-1/2 -translate-x-1/2 w-76 h-94.5 -top-26.25" />
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="bg-[#00B3FF]   relative w-82 h-68">
-                        <img src="./public/images/hero/cat-collar-tshirt.png" alt=""
+                        <img src="/images/hero/cat-collar-tshirt.png" alt=""
                             className="absolute left-1/2 -translate-x-1/2 w-76 h-94.5 -top-21.75" />
                     </div>
                 </SwiperSlide>
@@ -63,7 +73,7 @@ const HeroSection: React.FC = () => {
 
                 <SwiperSlide>
                     <div className="bg-[#00B3FF]   relative w-82 h-68">
-                        <img src="./public/images/hero/dad-tshirt.png" alt=""
+                        <img src="/images/hero/dad-tshirt.png" alt=""
                             className="absolute left-1/2 -translate-x-1/2 w-76 h-94.5 -top-26.25" />
                     </div>
                 </SwiperSlide>
@@ -71,14 +81,14 @@ const HeroSection: React.FC = () => {
 
                 <SwiperSlide>
                     <div className="bg-[#00B3FF]   relative w-82 h-68">
-                        <img src="./public/images/hero/daughter-sweatshirt.png" alt=""
+                        <img src="/images/hero/daughter-sweatshirt.png" alt=""
                             className="absolute left-1/2 -translate-x-1/2 w-76 h-94.5 -top-27.5" />
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="bg-[#00B3FF]   relative w-82 h-68">
-                        <img src="./public/images/hero/dog-green-sweatshirt.png" alt=""
+                        <img src="/images/hero/dog-green-sweatshirt.png" alt=""
                             className="absolute left-1/2 -translate-x-1/2 w-76 h-94.5 -top-26.25" />
                     </div>
                 </SwiperSlide>
@@ -91,7 +101,7 @@ const HeroSection: React.FC = () => {
 
             <ul className="flex flex-wrap justify-center gap-2.5 md:gap-14.25 text-[14px]">
                 <li>🔒 100% Secure Checkout </li>
-                <li className="flex gap-2.5"> <img src="./public/images/hero/flag.png" className="w-4.5" alt="" /> Proudly
+                <li className="flex gap-2.5"> <img src="/images/hero/flag.png" className="w-4.5" alt="" /> Proudly
                     Printed in Atlanta, GA</li>
                 <li>⭐️ Satisfaction Guaranteed </li>
             </ul>

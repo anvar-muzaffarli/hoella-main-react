@@ -1,0 +1,60 @@
+[
+    {
+        "id":1,
+        "mehsulun_adi":"T-shirts",
+        "mehsulun_shekli": "/images/category/t-shirts.svg"
+    },
+
+    
+    {
+        "id":2,
+        "mehsulun_adi":"Sweatshirt",
+        "mehsulun_shekli": "/images/category/sweat.svg"
+    },
+
+    
+    {
+        "id":3,
+        "mehsulun_adi":"Hoodie",
+        "mehsulun_shekli": "/images/category/hoodie.svg"
+    },
+
+    
+    {
+        "id":4,
+        "mehsulun_adi":"Accessories",
+        "mehsulun_shekli": "/images/category/accessories.svg"
+    },
+
+    
+    {
+        "id":5,
+        "mehsulun_adi":"Pet essentials",
+        "mehsulun_shekli": "/images/category/pet.svg"
+    },
+
+    
+    {
+        "id":6,
+        "mehsulun_adi":"Home-leaving",
+        "mehsulun_shekli": "/images/category/home.svg"
+    }
+
+    ,
+
+
+
+    {
+        "id":7,
+        "mehsulun_adi":"T-shirts",
+        "mehsulun_shekli": "/images/category/t-shirts.svg"
+    },
+
+    
+    {
+        "id":8,
+        "mehsulun_adi":"Sweatshirt",
+        "mehsulun_shekli": "/images/category/sweat.svg"
+    }
+
+]
