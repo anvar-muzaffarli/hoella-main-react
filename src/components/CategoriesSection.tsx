@@ -14,7 +14,7 @@ const CategoriesSection: React.FC = () => {
             <h1 className="text-center pt-20 md:text-[48px] pb-17.5 roboto-bold">The Ultimate Connection Starts Here
             </h1>
 
-            <div className="categories flex justify-center gap-15">
+            <div className="categories grid grid-cols-2 md:grid-cols-4 lg:grid-cols-9 justify-center gap-15">
 
             {
                 // && Conditional Rendering
